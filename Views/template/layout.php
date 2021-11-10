@@ -9,28 +9,16 @@
     <link rel="stylesheet" href="Public/css/main.css">
     <link rel="stylesheet" href="Public/css/menu.css">
     <link rel="stylesheet" href="Public/css/footer.css">
-    <link rel="stylesheet" href="Public/css/details_book.css">
-    <link rel="stylesheet" href="Public/css/content.css">
-    <link rel="stylesheet" href="Public/css/animateLeft.css">
-    <link rel="stylesheet" href="Public/css/animateRight.css">
-    <link rel="stylesheet" href="Public/css/book.css">
+    <!-- <link rel="stylesheet" href="Public/css/details_book.css"> -->
+    <!-- <link rel="stylesheet" href="Public/css/content.css"> -->
+    <!-- <link rel="stylesheet" href="Public/css/animateLeft.css"> -->
+    <!-- <link rel="stylesheet" href="Public/css/animateRight.css"> -->
+    <!-- <link rel="stylesheet" href="Public/css/book.css"> -->
+    <link rel="stylesheet" href="Public/css/new_book.css">
 
 </head>
 
 <body>
-    <?php
-    //Thong so ket noi CSDL
-    $severname = "localhost";
-    $username = "root";
-    $password = "";
-    $db_name = "web_team2";
-
-    //Tao ket noi CSDL
-    $conn = mysqli_connect($severname, $username, $password, $db_name);
-
-    ?>
-
-
     <!-- load menu -->
     <?php loadMenu(); ?>
     <script>
@@ -50,7 +38,9 @@
     </script>
 
     <!-- load component -->
-    <?php loadComponent(); ?>
+    <!-- <?php //loadComponent(); 
+            ?> -->
+    <?php loadModule('new_book'); ?>
 
     <?php loadModule('footer'); ?>
 </body>

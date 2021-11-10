@@ -18,7 +18,7 @@ if ($resultBook->num_rows > 0) { //_n mysqlum_rows
                             <table id="container_listbook">
                                 <tr>
                                     <td id="book_container">
-                                        <center><a href="<?php echo 'index.php?option=book&id=' . $rowBook['idSach']; ?>" class="listbook"><img id="book" src="<?php echo $rowBook['imgSach']; ?>" alt="image"></a></center>
+                                        <center><a href="<?php loadHref($rowBook['idSach']); ?>" class="listbook"><img id="book" src="<?php echo $rowBook['imgSach']; ?>" alt="image"></a></center>
                                     </td>
                                 </tr>
                                 <tr>

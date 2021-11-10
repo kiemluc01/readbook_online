@@ -1,13 +1,12 @@
 <?php
 $row = array();
 $book = loadModel('Book');
-$result = $book->get_bookcurrent($_REQUEST['id']);
+$result = $book->get_bookcurrent($_REQUEST['idSach']);
 while ($row = $result->fetch_assoc()) {
     $imgSach = $row['imgSach'];
     $Tensach = $row['Tensach'];
     $Tacgia = $row['Tacgia'];
     $nd = $row['tomtatND'];
-    $nsx = $row['MotaNXB'];
 }
 
 ?>
@@ -38,11 +37,15 @@ while ($row = $result->fetch_assoc()) {
             <!-- introduct for curent book-->
             <p><?php echo $nd ?></p>
             <!-- introduct for publishing company -->
-            <h3>Mô tả Nhà Xuất Bản</h3>
-            <p><?php echo $nsx ?></p>
             <hr>
 
         </div>
         <a href="<?php echo 'index.php?option=book&cat=' . $cat . ''; ?>"><input type="submit" id="read" value="Đọc"></a>
     </form>
+</div>
+<div id="most_read_books">
+
+</div>
+<div id="cmt_current_book">
+
 </div>

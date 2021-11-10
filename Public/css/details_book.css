@@ -9,12 +9,12 @@
 #img_book {
     width: 15%;
     /* background-color: gray; */
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .img_book {
     width: 250px;
-    height: 300px;
+    height: auto;
     margin-top: 30px;
 }
 

@@ -72,3 +72,12 @@ function loadMenu()
         echo 'cú tìm ra menu in rứa mô mà load cha';
     }
 }
+function loadHref($idSach)
+{
+    $href = 'index.php?option=book&';
+    if (isset($_REQUEST['idMember']))
+        $href = $href . 'idMember=' . $_REQUEST['idMember'] . '&idSach=' . $idSach;
+    else
+        $href = $href . 'idSach=' . $idSach;
+    echo $href;
+}
