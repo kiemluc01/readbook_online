@@ -52,7 +52,7 @@ a.nav {
 }
 
 a.nav:hover {
-    background-color: #d1cccc;
+    background-color: #4EBA88;
 }
 
 img#logo {
@@ -112,5 +112,5 @@ input.find {
 }
 
 a.login:hover {
-    background-color: #d1cccc;
+    background-color: #4EBA88;
 }

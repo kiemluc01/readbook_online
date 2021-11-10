@@ -37,9 +37,11 @@ while ($row = $result->fetch_assoc()) {
         <div id="book_introduction">
             <!-- introduct for curent book-->
             <p><?php echo $nd ?></p>
-            <hr>
             <!-- introduct for publishing company -->
+            <h3>Mô tả Nhà Xuất Bản</h3>
             <p><?php echo $nsx ?></p>
+            <hr>
+
         </div>
         <a href="<?php echo 'index.php?option=book&cat=' . $cat . ''; ?>"><input type="submit" id="read" value="Đọc"></a>
     </form>
