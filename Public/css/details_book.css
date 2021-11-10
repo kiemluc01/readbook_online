@@ -1,0 +1,47 @@
+#current_book {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+
+#img_book {
+    width: 15%;
+    /* background-color: gray; */
+    margin-left: 5%;
+}
+
+.img_book {
+    width: 250px;
+    height: 300px;
+}
+
+#content_book {
+    width: 75%;
+    /* background-color: gray; */
+}
+
+#main_details {
+    display: flex;
+}
+
+#main_details1 {
+    width: 70%;
+}
+
+#main_details2 {
+    width: 30%;
+    display: flex;
+}
+
+#read {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px/10px;
+    background-color: #FF5454;
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 5%;
+}
