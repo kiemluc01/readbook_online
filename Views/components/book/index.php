@@ -21,9 +21,9 @@ while ($row = $result->fetch_assoc()) {
         <!-- content book -->
         <div id="main_details">
             <div id="main_details1">
-                <h2><?php echo $Tensach; ?></h2>
-                <p><?php echo $Tacgia; ?></p>
-                <p style="color: #F34B4B;">✫ ✫ ✫ ✫ ✫</p>
+                <h2 id="bookname"><?php echo $Tensach; ?></h2>
+                <p id="writer"><?php echo $Tacgia; ?></p>
+                <p id="star" style="color: #F34B4B;">✫ ✫ ✫ ✫ ✫</p>
                 <!-- name book, writer and rate number star -->
             </div>
             <div id="main_details2">
@@ -35,7 +35,7 @@ while ($row = $result->fetch_assoc()) {
         <hr>
         <div id="book_introduction">
             <!-- introduct for curent book-->
-            <p><?php echo $nd ?></p>
+            <p id="nd"><?php echo $nd ?></p>
             <!-- introduct for publishing company -->
             <hr>
 
