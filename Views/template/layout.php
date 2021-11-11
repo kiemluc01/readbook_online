@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="Public/css/animateRight.css">
     <link rel="stylesheet" href="Public/css/book.css">
     <link rel="stylesheet" href="Public/css/new_book.css">
+    <link rel="stylesheet" href="Public/css/cmt_book.css">
 
 </head>
 
@@ -38,7 +39,9 @@
     </script>
 
     <!-- load component -->
-    <?php loadComponent(); ?>
+    <?php loadComponent();
+    //loadModule('cmt_book');
+    ?>
 
     <?php loadModule('footer'); ?>
 </body>

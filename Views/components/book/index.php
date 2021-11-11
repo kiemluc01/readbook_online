@@ -44,6 +44,5 @@ while ($row = $result->fetch_assoc()) {
     </form>
 </div>
 <?php loadModule('new_book'); ?>
-<div id="cmt_current_book">
-
-</div>
+<h3>Bài đánh giá của cộng đồng</h3>
+<?php loadModule('cmt_book'); ?>

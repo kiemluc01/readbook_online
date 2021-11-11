@@ -1,6 +1,6 @@
 <?php
 $book = loadModel('book');
-$resultBook =  $book->get_new_book();
+$resultBook =  $book->get_new_book($_REQUEST['idSach']);
 ?>
 <div id="new_book">
     <center>

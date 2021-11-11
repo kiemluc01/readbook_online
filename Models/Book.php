@@ -41,15 +41,16 @@ class Book extends Database
         $result = mysqli_query($this->conn, $sql);
         return $result;
     }
-    function get_cmt($idBook)
+    function get_new_book($idsach_cur)
     {
-        $sql = "select * from tbldanhgia";
+
+        $sql = "select a.* from (select a.*, Sotrang,Luotxem,Feedback,Favorite,tomtatND from tblsach as a, chitietsach as b where a.idSach = b.idSach and a.idSach != " . $idsach_cur . " ) as a order by a.Favorite desc limit 5";
         $result = mysqli_query($this->conn, $sql);
         return $result;
     }
-    function get_new_book()
+    function get_cmt($idBook)
     {
-        $sql = "select a.*, Sotrang,Luotxem,Feedback,Favorite,tomtatND from tblsach as a, chitietsach as b where a.idSach = b.idSach order by Favorite desc limit 5";
+        $sql = "select a.*,b.* from tbldanhgia as a, tblaccount as b where a.idMember = b.idMember and idSach = " . $idBook;
         $result = mysqli_query($this->conn, $sql);
         return $result;
     }
