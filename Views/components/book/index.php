@@ -43,9 +43,7 @@ while ($row = $result->fetch_assoc()) {
         <a href="<?php echo 'index.php?option=book&cat=' . $cat . ''; ?>"><input type="submit" id="read" value="Đọc"></a>
     </form>
 </div>
-<div id="most_read_books">
-
-</div>
+<?php loadModule('new_book'); ?>
 <div id="cmt_current_book">
 
 </div>

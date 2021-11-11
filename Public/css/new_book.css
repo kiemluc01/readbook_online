@@ -1,4 +1,9 @@
-/* img.new_book {
+div#container_newbook {
+    display: flex;
+    justify-content: space-between;
+}
+
+img.new_book {
     height: 200px;
     width: 180px;
 }
@@ -10,6 +15,49 @@ tr {
     align-items: center;
 }
 
-#icon_quantity {
+div#icon_quantity {
+    justify-content: space-between;
+}
+
+div#icon_quantity,
+div.icon_quantity {
     display: flex;
-} */
+}
+
+img.icon_quantity {
+    height: 30px;
+    width: 30px;
+}
+
+div#contruction {
+    width: 200px;
+    height: 200px;
+}
+
+table#new_book_container {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+a.submit_chitiet {
+    line-height: 30px;
+    height: 30px;
+    width: 120px;
+    background-color: aqua;
+    border-radius: 10px/10px;
+    text-decoration: none;
+    display: block;
+}
+
+figcaption {
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+p#introduct {
+    border: 1px solid rgb(204, 204, 204);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 150px;
+    width: 210px;
+}

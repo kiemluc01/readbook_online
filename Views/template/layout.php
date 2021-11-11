@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="Public/css/main.css">
     <link rel="stylesheet" href="Public/css/menu.css">
     <link rel="stylesheet" href="Public/css/footer.css">
-    <!-- <link rel="stylesheet" href="Public/css/details_book.css"> -->
-    <!-- <link rel="stylesheet" href="Public/css/content.css"> -->
-    <!-- <link rel="stylesheet" href="Public/css/animateLeft.css"> -->
-    <!-- <link rel="stylesheet" href="Public/css/animateRight.css"> -->
-    <!-- <link rel="stylesheet" href="Public/css/book.css"> -->
+    <link rel="stylesheet" href="Public/css/details_book.css">
+    <link rel="stylesheet" href="Public/css/content.css">
+    <link rel="stylesheet" href="Public/css/animateLeft.css">
+    <link rel="stylesheet" href="Public/css/animateRight.css">
+    <link rel="stylesheet" href="Public/css/book.css">
     <link rel="stylesheet" href="Public/css/new_book.css">
 
 </head>
@@ -38,9 +38,7 @@
     </script>
 
     <!-- load component -->
-    <!-- <?php //loadComponent(); 
-            ?> -->
-    <?php loadModule('new_book'); ?>
+    <?php loadComponent(); ?>
 
     <?php loadModule('footer'); ?>
 </body>
